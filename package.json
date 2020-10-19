@@ -4,5 +4,36 @@
   "description": "A common .ignore structure.",
   "main": "/dist/index.js",
   "author": "John Spence <jspence@carbonpay.app>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "git-cz": "^4.7.1",
+    "husky": "^4.3.0"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "build": "babel src --out-dir dist",
+    "test": "echo \"no test file\"\n"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
