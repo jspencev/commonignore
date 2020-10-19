@@ -5,8 +5,14 @@
   "main": "/dist/index.js",
   "author": "John Spence <jspence@carbonpay.app>",
   "license": "MIT",
+  "bin": {
+    "commonignore": "bin/commonignore"
+  },
   "dependencies": {
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "glob": "^7.1.6",
+    "thenify": "^3.3.1",
+    "thenify-all": "^1.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
