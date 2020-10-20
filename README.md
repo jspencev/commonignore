@@ -3,7 +3,7 @@ A common .ignore file.
 
 ## Install
 ```
-npm install -g commonignore
+npm install -g commonignore-js
 ```
 
 ## Usage
@@ -109,7 +109,7 @@ Reads the .commonignore file in the root of the app and writes .ignore files spe
 
   **Returns:** 
 
-    {\[filename\]: Array<String>} - Rules written in each .ignore file
+    {[filename]: Array<String>} - Rules written in each .ignore file
 
 ### getRules()
 Gets rules from .commonignore organized by output filename.
@@ -120,7 +120,7 @@ Gets rules from .commonignore organized by output filename.
 
   **Returns:** 
 
-    {everywhere: Array<String>, files: {\[filename\]: Array<String>}} - An array containing rules that apply in all files and an object with specific rules for each output file.
+    {everywhere: Array<String>, files: {[filename]: Array<String>}} - An array containing rules that apply in all files and an object with specific rules for each output file.
 
 ### writeFiles()
 Writes .ignore files as specified by the rules. Rules are written for each filename key in the files argument.
@@ -131,8 +131,8 @@ Writes .ignore files as specified by the rules. Rules are written for each filen
 
     everywhere - Array<String> - Rules that apply in all files.
 
-    files - {{\[filename\]: Array<String>}} - Object of {filename: \[rules\]} combinations specifying specific rules applied for each .ignore file. Filenames are relative to appRootPath.
+    files - {{[filename]: Array<String>}} - Object of {filename: [rules]} combinations specifying specific rules applied for each .ignore file. Filenames are relative to appRootPath.
 
   **Returns:**
   
-    {\[filename\]: Array<String>} - Object of {filename: \[rules\]} combinations with the rules written in each filename.
+    {[filename]: Array<String>} - Object of {filename: [rules]} combinations with the rules written in each filename.
