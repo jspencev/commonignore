@@ -73,6 +73,7 @@ Outputs:
 /babel.config.js
 /commitlint.config.js
 /config.poly
+/README.md
 /yarn.lock
 ```
 
