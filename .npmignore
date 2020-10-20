@@ -8,5 +8,14 @@
 /tmp.js
 /yarn-error.log
 
-# These rules apply just to .gitignore:
-/dist
+# These rules apply just to .npmignore:
+/src
+/.envrc
+/.gitignore
+/.nvmrc
+/addGlobal.js
+/babel.config.js
+/commitlint.config.js
+/config.poly
+/README.md
+/yarn.lock
