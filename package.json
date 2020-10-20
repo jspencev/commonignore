@@ -9,6 +9,7 @@
     "commonignore": "bin/commonignore"
   },
   "dependencies": {
+    "@carbon/node-util": "file:/Users/john/Dropbox/Code/carbon-new/node-util",
     "core-js": "^3.6.5",
     "glob": "^7.1.6",
     "thenify": "^3.3.1",

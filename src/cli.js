@@ -1,5 +1,5 @@
 import commonignore from './api/commonignore';
-import { spawnChildProcess } from './util';
+import { spawnChildProcess } from '@carbon/node-util';
 
 (async function() {
   const argv = require('yargs')
