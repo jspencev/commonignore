@@ -12,7 +12,8 @@
     "core-js": "^3.6.5",
     "glob": "^7.1.6",
     "thenify": "^3.3.1",
-    "thenify-all": "^1.6.0"
+    "thenify-all": "^1.6.0",
+    "yargs": "^16.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
