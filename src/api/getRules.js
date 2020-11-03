@@ -15,13 +15,13 @@ export default async function getRules(commonignorePath) {
   for (const rule of rules) {
     if (rule.slice(0, 2) === '#!') {
       currentIgnore = rule.slice(3);
+      if (!files[currentIgnore]) {
+        files[currentIgnore] = [];
+      }
     } else {
       if (currentIgnore === null) {
         everywhere.push(rule);
       } else {
-        if (!files[currentIgnore]) {
-          files[currentIgnore] = [];
-        }
         files[currentIgnore].push(rule);
       }
     }
