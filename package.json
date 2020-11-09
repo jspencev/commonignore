@@ -8,8 +8,14 @@
   "bin": {
     "commonignore": "bin/commonignore"
   },
+  "scripts": {
+    "commit": "git-cz",
+    "build": "babel src --out-dir dist",
+    "test": "echo \"no test file\"\n",
+    "commonignore": "babel-node src/cli.js"
+  },
   "dependencies": {
-    "@carbon/node-util": "file:/Users/john/Dropbox/Code/carbon-new/node-util",
+    "@carbon/node-util": "file:.poly/dependencies/node-util-v1.0.0.tgz",
     "core-js": "^3.6.5",
     "glob": "^7.1.6",
     "thenify": "^3.3.1",
@@ -29,11 +35,6 @@
     "git-cz": "^4.7.1",
     "husky": "^4.3.0"
   },
-  "scripts": {
-    "commit": "git-cz",
-    "build": "babel src --out-dir dist",
-    "test": "echo \"no test file\"\n"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -41,7 +42,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "commonignore -a",
+      "pre-commit": "babel-node src/cli.js -a",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
