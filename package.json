@@ -15,7 +15,6 @@
     "commonignore": "babel-node src/cli.js"
   },
   "dependencies": {
-    "@carbon/node-util": "file:.poly/dependencies/node-util-v1.0.0.tgz",
     "core-js": "^3.6.5",
     "glob": "^7.1.6",
     "thenify": "^3.3.1",
@@ -35,6 +34,10 @@
     "git-cz": "^4.7.1",
     "husky": "^4.3.0"
   },
+  "localDependencies": [
+    "node-util"
+  ],
+  "localDevDependencies": [],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
