@@ -9,7 +9,7 @@
 /dist
 
 #! .npmignore
-/.poly/devDependencies
+/.poly
 /src
 /.envrc
 /.gitignore
