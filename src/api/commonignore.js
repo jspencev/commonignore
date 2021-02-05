@@ -1,5 +1,5 @@
 const path = require('path');
-import { findPackage } from '@carbon/node-util';
+import { findPackage } from '@jspencev/node-util';
 import getRules from './getRules';
 import writeFiles from './writeFiles';
 

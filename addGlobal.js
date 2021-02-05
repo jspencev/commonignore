@@ -1,4 +1,4 @@
-import { spawnChildProcess, findPackage } from '@carbon/node-util';
+import { spawnChildProcess, findPackage } from '@jspencev/node-util';
 (async function() {
   const {pack} = await findPackage();
   const name = pack.name;
