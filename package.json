@@ -1,6 +1,6 @@
 {
   "name": "commonignore-js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A common .ignore structure.",
   "main": "/dist/index.js",
   "author": "John Spence <john.spence.v@gmail.com>",
