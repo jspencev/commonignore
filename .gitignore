@@ -3,12 +3,12 @@
 # Refer to https://github.com/jspencev/commonignore for more info.
 
 # These rules apply in all .ignore files:
-/.poly/build
-/.poly/tmp
+/.poly/*
 /node_modules
 /.env
 /tmp.js
 /yarn-error.log
 
 # These rules apply just to .gitignore:
+!/.poly/dependencies
 /dist

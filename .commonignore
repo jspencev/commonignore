@@ -1,11 +1,11 @@
-/.poly/build
-/.poly/tmp
+/.poly/*
 /node_modules
 /.env
 /tmp.js
 /yarn-error.log
 
 #! .gitignore
+!/.poly/dependencies
 /dist
 
 #! .npmignore
