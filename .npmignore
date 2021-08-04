@@ -3,8 +3,7 @@
 # Refer to https://github.com/jspencev/commonignore for more info.
 
 # These rules apply in all .ignore files:
-/.poly/build
-/.poly/tmp
+/.poly/*
 /node_modules
 /.env
 /tmp.js
@@ -12,13 +11,15 @@
 
 # These rules apply just to .npmignore:
 /.poly
+/.vscode
 /src
 /.envrc
 /.gitignore
 /.nvmrc
+/.prettierignore
+/.prettierrc.json
 /addGlobal.js
 /babel.config.js
 /commitlint.config.js
 /config.poly
-/README.md
 /yarn.lock

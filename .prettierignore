@@ -9,6 +9,12 @@
 /tmp.js
 /yarn-error.log
 
-# These rules apply just to .gitignore:
-!/.poly/dependencies
+# These rules apply just to .prettierignore:
+/.commonignore
+/.envrc
+/.gitignore
+/.npmignore
+/.prettierignore
+/.nvmrc
 /dist
+/yarn.lock
