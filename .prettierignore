@@ -9,17 +9,12 @@
 /tmp.js
 /yarn-error.log
 
-# These rules apply just to .npmignore:
-/.poly
-/.vscode
-/src
+# These rules apply just to .prettierignore:
+/.commonignore
 /.envrc
 /.gitignore
-/.nvmrc
+/.npmignore
 /.prettierignore
-/.prettierrc.json
-/addGlobal.js
-/babel.config.js
-/commitlint.config.js
-/config.poly
+/.nvmrc
+/dist
 /yarn.lock

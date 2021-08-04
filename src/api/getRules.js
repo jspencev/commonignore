@@ -1,5 +1,5 @@
-const thenifyAll = require('thenify-all');
-const fs = thenifyAll(require('fs'));
+const thenifyAll = require("thenify-all");
+const fs = thenifyAll(require("fs"));
 
 /**
  * Gets rules from .commonignore organized by output filename.
@@ -8,12 +8,12 @@ const fs = thenifyAll(require('fs'));
  */
 export default async function getRules(commonignorePath) {
   const commonignore = (await fs.readFile(commonignorePath)).toString();
-  const rules = commonignore.split('\n');
+  const rules = commonignore.split("\n");
   const everywhere = [];
   const files = {};
   let currentIgnore = null;
   for (const rule of rules) {
-    if (rule.slice(0, 2) === '#!') {
+    if (rule.slice(0, 2) === "#!") {
       currentIgnore = rule.slice(3);
       if (!files[currentIgnore]) {
         files[currentIgnore] = [];
@@ -26,5 +26,5 @@ export default async function getRules(commonignorePath) {
       }
     }
   }
-  return {files, everywhere};
+  return { files, everywhere };
 }

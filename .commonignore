@@ -10,13 +10,25 @@
 
 #! .npmignore
 /.poly
+/.vscode
 /src
 /.envrc
 /.gitignore
 /.nvmrc
+/.prettierignore
+/.prettierrc.json
 /addGlobal.js
 /babel.config.js
 /commitlint.config.js
 /config.poly
-/README.md
+/yarn.lock
+
+#! .prettierignore
+/.commonignore
+/.envrc
+/.gitignore
+/.npmignore
+/.prettierignore
+/.nvmrc
+/dist
 /yarn.lock

@@ -1,7 +1,7 @@
-const path = require('path');
-import { findPackage } from '@jspencev/node-util';
-import getRules from './getRules';
-import writeFiles from './writeFiles';
+const path = require("path");
+import { findPackage } from "@jspencev/node-util";
+import getRules from "./getRules";
+import writeFiles from "./writeFiles";
 
 /**
  * Reads the .commonignore file in the root of the app and writes .ignore files specified.
@@ -9,9 +9,9 @@ import writeFiles from './writeFiles';
  * @returns {[filename]: Array<String>} - Rules written in each .ignore file
  */
 export default async function commonignore(cwd) {
-  const {packPath} = await findPackage(cwd);
+  const { packPath } = await findPackage(cwd);
   const appRootPath = path.parse(packPath).dir;
-  const commonignorePath = path.join(appRootPath, './.commonignore');
+  const commonignorePath = path.join(appRootPath, "./.commonignore");
   const rules = await getRules(commonignorePath);
   const outFiles = await writeFiles(appRootPath, rules.everywhere, rules.files);
   return outFiles;
